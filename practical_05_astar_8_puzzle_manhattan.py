@@ -40,6 +40,7 @@ def astar(start):
                 if s[i][j] == 0:
                     x = i
                     y = j
+
         for dx, dy in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
             nx, ny = x + dx, y + dy
             if 0 <= nx < 3 and 0 <= ny < 3:

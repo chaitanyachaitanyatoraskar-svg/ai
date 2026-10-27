@@ -37,7 +37,7 @@ def water_jug():
 
     if B == 2:
         print("\nTarget Achieved!")
-        print("Jug B = ", B, "liters")
+        print("Jug B =", B, "liters")
     else:
         print("\nTarget Not Achieved.")
 

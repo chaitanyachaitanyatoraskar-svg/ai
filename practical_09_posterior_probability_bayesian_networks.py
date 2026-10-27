@@ -3,7 +3,6 @@
 # Required: pip install pgmpy
 # ==============================================================================
 
-# Support both pgmpy DiscreteBayesianNetwork and BayesianNetwork
 try:
     from pgmpy.models import DiscreteBayesianNetwork
 except ImportError:

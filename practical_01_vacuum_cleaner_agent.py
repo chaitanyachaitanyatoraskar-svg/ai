@@ -1,6 +1,6 @@
 # ==============================================================================
-# Practical No. 1: Vacuum Cleaner Agent
-# Q1. VACCUM CLEANER AGENT
+# Practical No. 1
+# Question: Q1. VACCUM CLEANER AGENT
 # ==============================================================================
 
 table = {
@@ -14,7 +14,7 @@ def vaccum_agent(location, Status):
     return table[(location, Status)]
 
 if __name__ == "__main__":
-    location = input("Enter location(A/B):")
-    Status = input("Enter Status (Dirty/Clean):")
+    location = input("Enter location(A/B): ")
+    Status = input("Enter Status (Dirty/Clean): ")
     action = vaccum_agent(location, Status)
     print("Action:", action)

@@ -1,5 +1,8 @@
 # ==============================================================================
-# Practical 2: BFS for 8-Puzzle Problem
+# Practical No. 2: Problem Solving by Searching (Uniform Search / Uninformed Search)
+# Aim: Given an initial configuration of 8-puzzle and a goal configuration,
+# write a python program to find the shortest sequence of moves to reach
+# the goal state using BFS(Breath First Search).
 # ==============================================================================
 
 from collections import deque
@@ -27,7 +30,6 @@ def get_neighbors(state):
             continue
         if move == 'Right' and index % 3 == 2:
             continue
-
         new_state = list(state)
         new_state[index], new_state[new_index] = new_state[new_index], new_state[index]
         neighbors.append((tuple(new_state), move))

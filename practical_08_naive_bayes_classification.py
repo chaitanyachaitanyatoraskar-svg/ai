@@ -1,5 +1,5 @@
 # ==============================================================================
-# Practical No: 08 Naive Bayes classification
+# Practical No: 08 Naive Bayes' Classification
 # Required: pip install scikit-learn
 # ==============================================================================
 

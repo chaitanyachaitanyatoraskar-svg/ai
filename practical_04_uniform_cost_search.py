@@ -31,8 +31,8 @@ graph = {
 }
 
 if __name__ == "__main__":
-    start = input("Enter start city: ").strip()
-    goal = input("Enter goal city: ").strip()
+    start = input("Enter start city: ")
+    goal = input("Enter goal city: ")
 
     path, cost = ucs(graph, start, goal)
 

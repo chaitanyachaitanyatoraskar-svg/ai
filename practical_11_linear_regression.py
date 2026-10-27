@@ -3,11 +3,17 @@
 # Required: pip install pandas scikit-learn
 # ==============================================================================
 
+import os
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
-data = pd.read_csv("stu.csv")
+# Locate stu.csv in current directory or script's directory
+csv_path = "stu.csv"
+if not os.path.exists(csv_path):
+    csv_path = os.path.join(os.path.dirname(__file__), "stu.csv")
+
+data = pd.read_csv(csv_path)
 
 x = data[['Hours']]
 y = data['Marks']

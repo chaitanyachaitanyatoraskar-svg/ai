@@ -3,15 +3,21 @@
 # Required: pip install pandas scikit-learn
 # ==============================================================================
 
+import os
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score
 
+# Locate student.csv in current directory or script's directory
+csv_path = "student.csv"
+if not os.path.exists(csv_path):
+    csv_path = os.path.join(os.path.dirname(__file__), "student.csv")
+
 # a) load dataset
 print("\n Load dataset")
-data = pd.read_csv("student.csv")
+data = pd.read_csv(csv_path)
 print(data)
 
 # b) (i) display missing values
